@@ -162,7 +162,9 @@ docker run --rm -v "$PWD":/app -w /app ruby:3.4-bookworm bash -lc '
 
 OR
 
+```bash
 bundle lock --add-platform ruby --add-platform linux/amd64
+```
 
 ## Resolve grpc Issues
 
