@@ -1,14 +1,14 @@
 [
   {
+    "name": "Cool Story",
+    "handle": "cool-story",
+    "date": "2026-01-11",
+    "body_html": "<p>Cool story starts here...</p>"
+  },
+  {
     "name": "Hello World!",
     "handle": "hello-world",
     "date": "2025-10-01",
     "body_html": "<h2>Hello World!</h2>\n<p>This is my <strong>first</strong> blog post. I promise more is coming soon!</p>"
-  },
-  {
-    "name": "Cool Story",
-    "handle": "cool-story",
-    "date": "2026-01-01",
-    "body_html": "<p>Cool story starts here...</p>"
   }
 ]
