@@ -1,34 +1,38 @@
-## Render Project Emulate Markdown
+# Render Project: Markdown Emulation
 
-For our project page we want to be able to render markdown.
-We know we should render markdown serverside because client side
-markdown rendering is difficult to implement and provides inconsistent results.
+Markdown rendering is needed for the project page. To ensure consistent and reliable results, markdown is rendered on the server side, since client-side rendering is considered complex and often produces inconsistent outputs.
 
-our `render_projects.py` will render our json with the markdown into html.
-Eventually we'll rework this code into our serverless functions.
+The JSON data containing markdown is processed and converted into HTML by the `render_projects.py` script. This code will eventually be integrated into the serverless functions.
+
+---
 
 ## Render Items with Frontmatter
 
-Both my projects and blog posts rely on markdown.
-It would probably be better to collect markdown files with front matter and turn those into json objects.
-Maybe everything contained within a directory for data.
+Markdown is used by both projects and blog posts. To improve structure, markdown files with frontmatter are collected and converted into JSON objects. Each type of content is placed in its corresponding directory, for example:
 
-eg. `/projects/:handle.markdown`
-eg. `/blog/:handle.markdown`
+- `/projects/:handle.markdown`
+- `/blog/:handle.markdown`
 
-## Tasks runner with invoke
+---
 
-I am using the task runner invoke and refactor the render_projects into render_items
-so it can render the projects and tbe blog.
+## Task Runner with Invoke
 
-```sh
+The **Invoke** task runner is used to handle rendering jobs. The original `render_projects` task has been refactored into `render_items` so both projects and blog posts can be rendered.
+
+**Available commands:**
+```bash
 invoke --list
 invoke render-blog
 invoke render-projects
 ```
 
+---
+
 ## Pygments
 
-For our synytax highlighting for our markdown we need to gererate the css.
+To enable syntax highlighting in the markdown output, the required CSS file is generated using **Pygments**. The package is installed and the stylesheet is created with the following commands:
+
+```bash
 pip install Pygments
 pygmentize -S monokai -f html -a .codehilite > pygments.css
+```
