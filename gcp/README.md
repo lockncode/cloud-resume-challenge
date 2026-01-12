@@ -149,7 +149,7 @@ bundle exec functions-framework --target hello_http --port 8080
 
 ![](../docs/error-protobuf.png)
 
-
+```bash
 docker run --rm -v "$PWD":/app -w /app ruby:3.4-bookworm bash -lc '
   set -e
   ruby -v
@@ -158,6 +158,7 @@ docker run --rm -v "$PWD":/app -w /app ruby:3.4-bookworm bash -lc '
   bundle config set --local deployment true
   bundle install --jobs 4 --retry 3
   bundle info google-protobuf
+```
 
 OR
 
