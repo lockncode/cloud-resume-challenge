@@ -147,7 +147,7 @@ bundle exec functions-framework --target hello_http --port 8080
 
 ## Resolve Protobuffer Google Issues
 
-![](./docs/error-protobuf.png)
+![](../docs/error-protobuf.png)
 
 
 docker run --rm -v "$PWD":/app -w /app ruby:3.4-bookworm bash -lc '
@@ -159,11 +159,13 @@ docker run --rm -v "$PWD":/app -w /app ruby:3.4-bookworm bash -lc '
   bundle install --jobs 4 --retry 3
   bundle info google-protobuf
 
-  OR
+OR
+
+bundle lock --add-platform ruby --add-platform linux/amd64
 
 ## Resolve grpc Issues
 
-![](./docs/error-grpc.png)
+![](../docs/error-grpc.png)
 
 Set Ruby to 3.3.0
 Downgrade dependencies of grpc and functions_framework in Gemfile
