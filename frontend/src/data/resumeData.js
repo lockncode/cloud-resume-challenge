@@ -19,9 +19,9 @@ const resumeData = {
     experience: [
       {
         id: 2,
-        title: "KubeCraft - DevOps Internship",
+        title: "KubeCraft - DevOps Community",
         location: "Online",
-        duration: "10/2024–Present",
+        duration: "10/2024 – Present",
         years: "(1 year)",
         details: [
           "Actively participating in KubeCraft's hands-on DevOps internship program, focused on building production-ready skills through real-world labs, coaching, and project execution",
@@ -32,7 +32,7 @@ const resumeData = {
         id: 3,
         title: "Ingredion Germany - Power BI Developer",
         location: "Hamburg (100% remote)",
-        duration: "10/2023-10/2024",
+        duration: "10/2023 - 10/2024",
         years: "(1 year)",
         details: [
           "Developed, monitored and optimised automated KPI and metrics dashboards, enabling real-time monitoring and data-driven decision-making across multiple business functions",
@@ -45,7 +45,7 @@ const resumeData = {
         id: 4,
         title: "Alpha Consulting - Project Assistant",
         location: "Chemnitz",
-        duration: "01/2018-02/2022",
+        duration: "01/2018 - 02/2022",
         years: "(4 years)",
         details: [
           "Managed and completed projects with high 5-figure profits for DAX 40 Index clients",
@@ -57,7 +57,7 @@ const resumeData = {
         id: 5,
         title: "Intenta - Data Processing",
         location: "Chemnitz",
-        duration: "08/2016-12/2017",
+        duration: "08/2016 - 12/2017",
         years: "(1.5 years)",
         details: [
           "Labelled collected data using in-house software for self-driving car projects",
@@ -69,7 +69,7 @@ const resumeData = {
         id: 6,
         title: "Alpha Consulting - Project Manager",
         location: "Chemnitz",
-        duration: "07/2013-07/2016",
+        duration: "07/2013 - 07/2016",
         years: "(3 year)",
         details: [
           "Led projects for metrological certification issuance",
@@ -86,7 +86,7 @@ const resumeData = {
         title: "DataScientest Data Engineering Bootcamp",
         subtitle: "Hands-on assignments applied in a group project",
         location: "Online",
-        duration: "10/2025-01/2026",
+        duration: "10/2025 - 01/2026",
       },
       {
         id: 8,
@@ -99,7 +99,7 @@ const resumeData = {
         id: 9,
         title: "Certifications",
         location: "Online",
-        duration: "2021-Present",
+        duration: "2021 - Present",
         details: [
           "DataCamp Associate AI Engineer for Developers",
           "Apache Airflow 3 Fundamentals",

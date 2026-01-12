@@ -27,6 +27,7 @@
         - name: Terraform init and destroy
           community.general.terraform:
             project_path: "{{ project_path }}"
+            workspace: gcs-alexweisstechde
             force_init: true
             state: absent                      # <-- destroy
             variables: "{{ {'bucket_name': bucket_name} if (bucket_name is defined) else omit }}"

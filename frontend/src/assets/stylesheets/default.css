@@ -14,14 +14,13 @@ html, body {
   background-size: 50%;
 }
 
-
 h1,h2,h3,h4,h5 {
   margin: 0px;
 }
 
 h1.fancy {
   text-align: center;
-  font-family: "Rubik Distressed", system-ui;
+  font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
@@ -88,18 +87,6 @@ li {
     text-decoration: underline;
   }
 } 
-
-.disclaimer {
-  background: rgb(255,255,0);
-  color: rgba(0,0,0,0.8);
-  border: solid 1px rgba(0,0,0,0.1);
-  border-bottom: solid 1px rgba(0,0,0,0.4);
-  border-right: solid 1px rgba(0,0,0,0.2);
-  padding: 8px;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 14px;
-}
 
 div.content_wrap {
   height: 100%;

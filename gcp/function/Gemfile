@@ -1,0 +1,12 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+ruby "~> 3.3.0"
+
+# gem "rails"
+gem "functions_framework", "~> 1.0"
+gem 'base64'
+gem "google-cloud-firestore"
+gem "google-protobuf", "~> 3.25"
+gem "grpc", "1.67"
